@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a 'browser action' with kittens.",
+  "name": "Js QR Code generator",
+  "description": "This extension to generated qr code by pure javascript.",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "js-qrcode.png",
     "default_popup": "popup.html"
   },
   "permissions": [

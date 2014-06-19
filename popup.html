@@ -1,27 +1,27 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        min-width: 357px;
-        overflow-x: hidden;
-      }
-
-      img {
-        margin: 5px;
-        border: 2px solid black;
-        vertical-align: middle;
-        width: 75px;
-        height: 75px;
-      }
-    </style>
-    <script src="jquery-1.10.2.js"></script>
+    <link href="popup.css" type="text/css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
     <script src="qrcode.js"></script>
     <script src="jquery.qrcode.js"></script>
+    
   </head>
   <body>
-    <div class="container"><canvas width="256" height="256"></canvas></div>
+    <div class="result"><canvas width="256" height="256"></canvas></div>
+    
+    <div class="input">
+      <form class="pure-form">
+        <textarea name="comment" rows="1" class="text" placeholder="请输入任意文本"></textarea>
+      </form>
+      <div class="btns">
+        <button class="pure-button" id="cancel">Cancel</button>
+        <button class="pure-button" id="ok">Ok</button>
+      </div>
+    </div>
+    
   </body>
   <script src="popup.js"></script>
 </html>
