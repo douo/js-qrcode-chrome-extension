@@ -4,7 +4,7 @@
         "description": "the title of this extension."
     },
     "description": {
-	"message": "使用 Javascript 在本地生成 QRCode 的生成器",
+	"message": "无需访问远程接口，使用 Javascript 在本地生成二维码的生成器",
         "description": "the description of this extension."
     },
 

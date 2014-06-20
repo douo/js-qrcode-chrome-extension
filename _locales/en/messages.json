@@ -4,7 +4,7 @@
         "description": "the title of this extension."
     },
     "description": {
-	"message": "QR Code Generator using pure javascript",
+	"message": "We use javascript to create QRCode in browser",
         "description": "the description of this extension."
     },
 

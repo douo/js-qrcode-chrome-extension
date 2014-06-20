@@ -110,8 +110,6 @@ var Jsqr = {};
 	generate(text,$canvas[0]);
     }
 
-
-
     Jsqr.initPopup = initPopup;
     Jsqr.generateInject = generateInject;
 
