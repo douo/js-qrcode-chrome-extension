@@ -64,6 +64,9 @@ var Jsqr = {};
 			      option.text = tab[0].url;
 			      $("canvas").qrcode(option);
 			  });
+	$("#cancel").text(chrome.i18n.getMessage('cancel'));
+	$("#ok").text(chrome.i18n.getMessage('ok'));
+	$(".text").attr("placeholder",chrome.i18n.getMessage('popup_text_hint'));
 	$(".text").click(showInput);
 	/* 
 	   有可能在某种情况下，页面弹出时，text 会立刻获得焦点

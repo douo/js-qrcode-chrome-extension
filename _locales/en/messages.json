@@ -1,0 +1,38 @@
+{
+    "name": {
+        "message": "Offline QRCode Generator",
+        "description": "the title of this extension."
+    },
+    "description": {
+	"message": "QR Code Generator using pure javascript",
+        "description": "the description of this extension."
+    },
+
+    "ok": {
+	"message": "OK"
+    },
+
+    "cancel": {
+	"message": "Cancel"
+    },
+
+    "popup_text_hint": {
+	"message": "type to generate"
+    },
+
+    "context_menu_placeholder": {
+	"message": "Create QRCode for $1"
+    },
+
+    "context_menu_page": {
+	"message": "Page"
+    },
+
+    "context_menu_selection": {
+	"message": "Selection"
+    },
+
+    "context_menu_link": {
+	"message": "Link"
+    }
+}

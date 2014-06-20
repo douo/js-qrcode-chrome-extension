@@ -32,10 +32,12 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 chrome.runtime.onInstalled.addListener(function() {
     // Create one test item for each context type.
     var contexts = ["page","selection","link"];
-    var texts = ["当前页面","选择文本","选择链接"];
+    var texts = [chrome.i18n.getMessage("context_menu_page"),
+		 chrome.i18n.getMessage("context_menu_selection"),
+		 chrome.i18n.getMessage("context_menu_link")];
     for (var i = 0; i < contexts.length; i++) {
 	var context = contexts[i];
-	var title = "为"+texts[i]+"生成二维码";
+	var title = chrome.i18n.getMessage("context_menu_placeholder",texts[i]);
 	var id = chrome.contextMenus.create({"title": title, "contexts":[context],
                                              "id": "jsqr-" + context});
     }

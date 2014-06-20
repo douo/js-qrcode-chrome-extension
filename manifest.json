@@ -1,19 +1,20 @@
 {
-  "manifest_version": 2,
-
-  "name": "Js QR Code generator",
-  "description": "This extension to generated qr code by pure javascript.",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "js-qrcode.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "tabs","contextMenus","<all_urls>"
-  ],
-  "background": {
-    "scripts": ["createmenu.js"]
-  }
+    "manifest_version": 2,
+    
+    "name": "__MSG_name__",
+    "description": "__MSG_description__",
+    "version": "1.0",
+    "default_locale": "en",
+    "browser_action": {
+	"default_icon": "js-qrcode.png",
+	"default_popup": "popup.html"
+    },
+    "permissions": [
+	"tabs","contextMenus","<all_urls>"
+    ],
+    "background": {
+	"scripts": ["createmenu.js"],
+	"persistent": false
+    }
 
 }

@@ -1,0 +1,39 @@
+{
+    "name": {
+        "message": "离线二维码生成器",
+        "description": "the title of this extension."
+    },
+    "description": {
+	"message": "使用 Javascript 在本地生成 QRCode 的生成器",
+        "description": "the description of this extension."
+    },
+
+    "ok": {
+	"message": "生成"
+    },
+
+    "cancel": {
+	"message": "取消"
+    },
+
+    "popup_text_hint": {
+	"message": "可输入任意文本"
+    },
+
+    "context_menu_placeholder": {
+	"message": "为$1生成二维码"
+    },
+
+    "context_menu_page": {
+	"message": "当前页面"
+    },
+
+    "context_menu_selection": {
+	"message": "所选文本"
+    },
+
+    "context_menu_link": {
+	"message": "所选链接"
+    }
+
+}
