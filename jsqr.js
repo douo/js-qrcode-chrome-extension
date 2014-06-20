@@ -3,7 +3,8 @@ var Jsqr = {};
     var size = 256;
     var option = {
 	size: size,
-	ecLevel: 'M'
+	ecLevel: 'M',
+	quiet: 1
     }
     
     function clearCanvas(canvas){
@@ -11,8 +12,10 @@ var Jsqr = {};
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
-    function generete(text,canvas){
+    function generate(text,canvas){
 	// utf8 支持
+	console.log(text);
+	console.log(canvas);
 	option.text = String(text).replace(
 		/[\u0080-\u07ff]/g,
 		function(c) {
@@ -69,12 +72,45 @@ var Jsqr = {};
 	setTimeout(function(){$(".text").focus(showInput)},50);
 	$("#cancel").click(showCode);
 	$("#ok").click(function(){
-	    generete($(".text").val(),$("canvas")[0]);
+	    generate($(".text").val(),$("canvas")[0]);
 	    showCode();
 	})
     }
+
+    function generateInject(text){
+	var size = 256;
+	var div = $("<div></div>");
+	
+	console.log(div);
+	div.click(function(){
+	    console.log('click');
+	    div.remove();
+	})
+	$( "body" ).append(div);
+
+	div.css({
+	    'position':'fixed',
+	    'top':0,
+	    'left':0,
+	    'width':'100%',
+	    'height':'100%',
+	    'z-index':'1000'});
+	$(div).css('background-color', 'rgba(0,0,0,.9)');
+	var $canvas = $("<canvas width=\""+size+"\" height=\""+size+"\"></canvas>");
+	$canvas.css({
+	    top: div.height()/2 - size/2,
+	    left: div.width()/2 - size/2,
+	    position: 'absolute',
+	    background: 'white'
+	});
+	$(div).append($canvas);
+	generate(text,$canvas[0]);
+    }
+
+
+
     Jsqr.initPopup = initPopup;
-    Jsqr.generete = generete;
+    Jsqr.generateInject = generateInject;
 
 }(jQuery);
 

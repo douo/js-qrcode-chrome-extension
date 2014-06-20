@@ -10,7 +10,7 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "tabs","contextMenus"
+    "tabs","contextMenus","<all_urls>"
   ],
   "background": {
     "scripts": ["createmenu.js"]
