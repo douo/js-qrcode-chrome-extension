@@ -48,6 +48,8 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .btns {
     margin-top: 8px;
     display:none;
+    width: 90%;
+    margin:auto;
 }
 
 #cancel {
