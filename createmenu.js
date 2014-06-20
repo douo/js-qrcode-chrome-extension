@@ -4,7 +4,7 @@
 
 // The onClicked callback function.
 function onClickHandler(info, tab) {
-      console.log("item " + info.menuItemId + " was clicked");
+    console.log("item " + info.menuItemId + " was clicked");
     console.log("info: " + JSON.stringify(info));
     console.log("tab: " + JSON.stringify(tab));
     var data = "";
