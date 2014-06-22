@@ -34,5 +34,8 @@
 
     "context_menu_link": {
 	"message": "Link"
+    },
+    "context_menu_image": {
+	"message": "Image"
     }
 }
